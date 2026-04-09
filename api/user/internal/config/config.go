@@ -12,3 +12,7 @@ type Config struct {
 	rest.RestConf
 	UserRpc zrpc.RpcClientConf
 }
+
+type UnifiedConfig struct {
+	Api Config
+}
