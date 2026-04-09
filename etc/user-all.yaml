@@ -1,0 +1,11 @@
+Api:
+  Name: user-api
+  Host: 0.0.0.0
+  Port: 8888
+  UserRpc:
+    Endpoints:
+      - 127.0.0.1:8080
+
+Rpc:
+  Name: user.rpc
+  ListenOn: 0.0.0.0:8080
