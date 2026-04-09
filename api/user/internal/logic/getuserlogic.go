@@ -4,10 +4,10 @@
 package logic
 
 import (
+	"2cgrowth/goz/api/user/internal/svc"
+	"2cgrowth/goz/api/user/internal/types"
+	"2cgrowth/goz/rpc/user/user"
 	"context"
-	"goz/api/user/internal/svc"
-	"goz/api/user/internal/types"
-	"goz/rpc/user/user"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

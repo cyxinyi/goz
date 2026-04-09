@@ -7,9 +7,9 @@ import (
 	"net/http"
 
 	"github.com/zeromicro/go-zero/rest/httpx"
-	"goz/api/user/internal/logic"
-	"goz/api/user/internal/svc"
-	"goz/api/user/internal/types"
+	"2cgrowth/goz/api/user/internal/logic"
+	"2cgrowth/goz/api/user/internal/svc"
+	"2cgrowth/goz/api/user/internal/types"
 )
 
 func GetUserHandler(svcCtx *svc.ServiceContext) http.HandlerFunc {

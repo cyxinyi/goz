@@ -1,6 +1,6 @@
 package svc
 
-import "goz/rpc/user/internal/config"
+import "2cgrowth/goz/rpc/user/internal/config"
 
 type ServiceContext struct {
 	Config config.Config

@@ -1,4 +1,4 @@
-module goz
+module 2cgrowth/goz
 
 go 1.24.3
 

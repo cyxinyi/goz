@@ -4,10 +4,10 @@ import (
 	"flag"
 	"fmt"
 
-	"goz/rpc/user/internal/config"
-	"goz/rpc/user/internal/server"
-	"goz/rpc/user/internal/svc"
-	"goz/rpc/user/user"
+	"2cgrowth/goz/rpc/user/internal/config"
+	"2cgrowth/goz/rpc/user/internal/server"
+	"2cgrowth/goz/rpc/user/internal/svc"
+	"2cgrowth/goz/rpc/user/user"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/core/service"

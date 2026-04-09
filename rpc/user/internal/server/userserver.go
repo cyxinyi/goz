@@ -7,9 +7,9 @@ package server
 import (
 	"context"
 
-	"goz/rpc/user/internal/logic"
-	"goz/rpc/user/internal/svc"
-	"goz/rpc/user/user"
+	"2cgrowth/goz/rpc/user/internal/logic"
+	"2cgrowth/goz/rpc/user/internal/svc"
+	"2cgrowth/goz/rpc/user/user"
 )
 
 type UserServer struct {

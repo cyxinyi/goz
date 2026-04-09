@@ -4,9 +4,9 @@
 package svc
 
 import (
+	"2cgrowth/goz/api/user/internal/config"
+	"2cgrowth/goz/rpc/user/user"
 	"github.com/zeromicro/go-zero/zrpc"
-	"goz/api/user/internal/config"
-	"goz/rpc/user/user"
 )
 
 type ServiceContext struct {

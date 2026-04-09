@@ -7,9 +7,9 @@ import (
 	"flag"
 	"fmt"
 
-	"goz/api/user/internal/config"
-	"goz/api/user/internal/handler"
-	"goz/api/user/internal/svc"
+	"2cgrowth/goz/api/user/internal/config"
+	"2cgrowth/goz/api/user/internal/handler"
+	"2cgrowth/goz/api/user/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/rest"

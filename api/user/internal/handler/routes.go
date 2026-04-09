@@ -6,7 +6,7 @@ package handler
 import (
 	"net/http"
 
-	"goz/api/user/internal/svc"
+	"2cgrowth/goz/api/user/internal/svc"
 
 	"github.com/zeromicro/go-zero/rest"
 )
