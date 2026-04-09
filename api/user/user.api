@@ -1,0 +1,15 @@
+type (
+	GetUserRequest {
+		Id int64 `path:"id"`
+	}
+	GetUserResponse {
+		Id   int64  `json:"id"`
+		Name string `json:"name"`
+	}
+)
+
+service user-api {
+	@handler GetUser
+	get /user/:id (GetUserRequest) returns (GetUserResponse)
+}
+

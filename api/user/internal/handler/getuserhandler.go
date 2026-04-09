@@ -1,0 +1,41 @@
+// Code scaffolded by goctl. Safe to edit.
+// goctl 1.9.2
+
+package handler
+
+import (
+	"net/http"
+
+	"awesomeProject3/go-zero/api/user/internal/logic"
+	"awesomeProject3/go-zero/api/user/internal/svc"
+	"awesomeProject3/go-zero/api/user/internal/types"
+	"github.com/zeromicro/go-zero/rest/httpx"
+)
+
+func GetUserHandler(svcCtx *svc.ServiceContext) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		var req types.GetUserRequest
+		if err := httpx.Parse(r, &req); err != nil {
+			httpx.ErrorCtx(r.Context(), w, err)
+			return
+		}
+
+		l := logic.NewGetUserLogic(r.Context(), svcCtx)
+		resp, err := l.GetUser(&req)
+		if err != nil {
+			httpx.ErrorCtx(r.Context(), w, err)
+		} else {
+			httpx.OkJsonCtx(r.Context(), w, resp)
+		}
+	}
+}
+
+func HealthCheck(svcCtx *svc.ServiceContext) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		httpx.OkJsonCtx(r.Context(), w, struct {
+			Resp string `json:"resp"`
+		}{
+			Resp: "success",
+		})
+	}
+}
