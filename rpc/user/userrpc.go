@@ -4,10 +4,10 @@ import (
 	"flag"
 	"fmt"
 
-	"awesomeProject3/go-zero/rpc/user/internal/config"
-	"awesomeProject3/go-zero/rpc/user/internal/server"
-	"awesomeProject3/go-zero/rpc/user/internal/svc"
-	"awesomeProject3/go-zero/rpc/user/user"
+	"goz/rpc/user/internal/config"
+	"goz/rpc/user/internal/server"
+	"goz/rpc/user/internal/svc"
+	"goz/rpc/user/user"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/core/service"

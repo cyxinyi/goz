@@ -6,10 +6,10 @@ package handler
 import (
 	"net/http"
 
-	"awesomeProject3/go-zero/api/user/internal/logic"
-	"awesomeProject3/go-zero/api/user/internal/svc"
-	"awesomeProject3/go-zero/api/user/internal/types"
 	"github.com/zeromicro/go-zero/rest/httpx"
+	"goz/api/user/internal/logic"
+	"goz/api/user/internal/svc"
+	"goz/api/user/internal/types"
 )
 
 func GetUserHandler(svcCtx *svc.ServiceContext) http.HandlerFunc {

@@ -4,10 +4,10 @@
 package logic
 
 import (
-	"awesomeProject3/go-zero/api/user/internal/svc"
-	"awesomeProject3/go-zero/api/user/internal/types"
-	"awesomeProject3/go-zero/rpc/user/user"
 	"context"
+	"goz/api/user/internal/svc"
+	"goz/api/user/internal/types"
+	"goz/rpc/user/user"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

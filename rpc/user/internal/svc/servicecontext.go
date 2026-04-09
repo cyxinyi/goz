@@ -1,6 +1,6 @@
 package svc
 
-import "awesomeProject3/go-zero/rpc/user/internal/config"
+import "goz/rpc/user/internal/config"
 
 type ServiceContext struct {
 	Config config.Config

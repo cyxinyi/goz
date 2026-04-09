@@ -4,9 +4,9 @@
 package svc
 
 import (
-	"awesomeProject3/go-zero/api/user/internal/config"
-	"awesomeProject3/go-zero/rpc/user/user"
 	"github.com/zeromicro/go-zero/zrpc"
+	"goz/api/user/internal/config"
+	"goz/rpc/user/user"
 )
 
 type ServiceContext struct {
