@@ -2,6 +2,12 @@ Api:
   Name: user-api
   Host: 0.0.0.0
   Port: 8888
+  UserRpcNacos:
+    Host: 127.0.0.1
+    Port: 8848
+    ServiceName: user-rpc
+    GroupName: DEFAULT_GROUP
+    ClusterName: DEFAULT
   UserRpc:
     Endpoints:
       - 127.0.0.1:8080
@@ -9,3 +15,12 @@ Api:
 Rpc:
   Name: user.rpc
   ListenOn: 0.0.0.0:8080
+  Nacos:
+    Host: 127.0.0.1
+    Port: 8848
+    ServiceName: user-rpc
+    GroupName: DEFAULT_GROUP
+    ClusterName: DEFAULT
+    RegisterIP: 127.0.0.1
+    Metadata:
+      protocol: grpc

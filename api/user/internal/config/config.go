@@ -4,13 +4,15 @@
 package config
 
 import (
+	"2cgrowth/goz/internal/nacosx"
 	"github.com/zeromicro/go-zero/rest"
 	"github.com/zeromicro/go-zero/zrpc"
 )
 
 type Config struct {
 	rest.RestConf
-	UserRpc zrpc.RpcClientConf
+	UserRpc      zrpc.RpcClientConf `json:",optional"`
+	UserRpcNacos nacosx.Config      `json:",optional"`
 }
 
 type UnifiedConfig struct {

@@ -30,6 +30,12 @@ func main() {
 	}
 	ctx := svc.NewServiceContext(c)
 
+	nacosCleanup, err := svc.RegisterToNacos(c)
+	if err != nil {
+		panic(fmt.Errorf("register rpc service to nacos: %w", err))
+	}
+	defer nacosCleanup()
+
 	s := zrpc.MustNewServer(c.RpcServerConf, func(grpcServer *grpc.Server) {
 		user.RegisterUserServer(grpcServer, server.NewUserServer(ctx))
 
