@@ -18,4 +18,5 @@ Run examples:
 - `Api.UserRpcNacos` is used by `user-api` to discover `user-rpc`.
 - `Api.UserRpc.Endpoints` remains as a fallback when Nacos is not configured.
 
-Default sample config points to `127.0.0.1:8848`, service name `user-rpc`.
+Default sample config points to `127.0.0.1:8848`, service name `user-rpc`,
+namespace `bitora`.

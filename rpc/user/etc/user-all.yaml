@@ -5,6 +5,7 @@ Api:
   UserRpcNacos:
     Host: 127.0.0.1
     Port: 8848
+    NamespaceId: bitora
     ServiceName: user-rpc
     GroupName: DEFAULT_GROUP
     ClusterName: DEFAULT
@@ -18,6 +19,7 @@ Rpc:
   Nacos:
     Host: 127.0.0.1
     Port: 8848
+    NamespaceId: bitora
     ServiceName: user-rpc
     GroupName: DEFAULT_GROUP
     ClusterName: DEFAULT
