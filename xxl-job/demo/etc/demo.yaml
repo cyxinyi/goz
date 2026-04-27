@@ -3,6 +3,6 @@ admin:
   serveraddr: http://127.0.0.1:8087/xxl-job-admin
   accesstoken: default_token
 executor:
-  registrykey: cursor-xxl-job-demo
+  registrykey: xxl-job-demo
   ip: host.docker.internal
   port: "9999"
