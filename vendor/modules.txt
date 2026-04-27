@@ -128,6 +128,9 @@ github.com/fatih/color
 # github.com/fxamacker/cbor/v2 v2.9.0
 ## explicit; go 1.20
 github.com/fxamacker/cbor/v2
+# github.com/go-basic/ipv4 v1.0.0
+## explicit; go 1.14
+github.com/go-basic/ipv4
 # github.com/go-logr/logr v1.4.3
 ## explicit; go 1.18
 github.com/go-logr/logr
@@ -327,6 +330,9 @@ github.com/tjfoc/gmsm/sm3
 # github.com/x448/float16 v0.8.4
 ## explicit; go 1.11
 github.com/x448/float16
+# github.com/xxl-job/xxl-job-executor-go v1.2.0
+## explicit; go 1.14
+github.com/xxl-job/xxl-job-executor-go
 # github.com/zeromicro/go-zero v1.10.1
 ## explicit; go 1.24.0
 github.com/zeromicro/go-zero/core/breaker
