@@ -1,8 +1,8 @@
 name: xxl-job-demo
 admin:
-  serveraddr: http://127.0.0.1:8087/xxl-job-admin
+  serveraddr: http://byore-devtest-xxl-job.infra.byoresvc.com/xxl-job-admin
   accesstoken: default_token
 executor:
   registrykey: xxl-job-demo
-  ip: host.docker.internal
+  ip: gocron1-byore-test-1.test.efficiency.byoresvc.com
   port: "9999"

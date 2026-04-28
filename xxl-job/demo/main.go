@@ -127,21 +127,47 @@ func applyDefaults(c *Config) {
 	if c.Name == "" {
 		c.Name = "xxl-job-demo"
 	}
+	//bdot注册了环境变量
+	c.Admin.ServerAddr = resolveServerAddr(c.Admin.ServerAddr)
 	if c.Admin.ServerAddr == "" {
 		c.Admin.ServerAddr = "http://127.0.0.1:8087/xxl-job-admin"
 	}
+	//bdot注册了环境变量
+	c.Admin.AccessToken = resolveAccessToken(c.Admin.AccessToken)
 	if c.Admin.AccessToken == "" {
 		c.Admin.AccessToken = "default_token"
 	}
 	if c.Executor.RegistryKey == "" {
 		c.Executor.RegistryKey = "cursor-xxl-job-demo"
 	}
-	if c.Executor.IP == "" {
-		c.Executor.IP = "127.0.0.1"
-	}
+	c.Executor.IP = resolveExecutorIP(c.Executor.IP)
 	if c.Executor.Port == "" {
 		c.Executor.Port = "9999"
 	}
+}
+
+func resolveExecutorIP(configIP string) string {
+	if podIP := strings.TrimSpace(os.Getenv("POD_IP")); podIP != "" {
+		return podIP
+	}
+	if ip := strings.TrimSpace(configIP); ip != "" {
+		return ip
+	}
+	return "127.0.0.1"
+}
+
+func resolveServerAddr(serverAddr string) string {
+	if serverAddress := strings.TrimSpace(os.Getenv("XXL_JOB_ADMIN_ADDRESS")); serverAddress != "" {
+		return serverAddress
+	}
+	return serverAddr
+}
+
+func resolveAccessToken(accessToken string) string {
+	if token := strings.TrimSpace(os.Getenv("XXL_JOB_ACCESS_TOKEN")); token != "" {
+		return token
+	}
+	return accessToken
 }
 
 type xxlLogAdapter struct{}
